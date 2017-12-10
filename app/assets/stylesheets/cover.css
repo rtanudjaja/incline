@@ -124,6 +124,11 @@ body {
   font-weight: 700;
 }
 
+.button {
+  font-size: 2em;
+  text-align: center;
+}
+
 
 /*
  * Footer
