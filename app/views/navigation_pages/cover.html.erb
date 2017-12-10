@@ -1,0 +1,41 @@
+<% provide(:title, "Cover") %>
+  <head>
+    <link rel="icon" href="/assets/favicon.png"/>
+    <title>INC.LINE | <%= yield(:title) %></title>
+    <%= render 'layouts/rails_default' %>
+    <%= stylesheet_link_tag "cover" %>
+    <%= render 'layouts/shim' %>
+  </head>
+  
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <header class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">INC.LINE</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="\home">Home</a>
+                <a class="nav-link" href="\about">About</a>
+                <a class="nav-link" href="\contact">Contact</a>
+              </nav>
+            </div>
+          </header>
+
+          <main role="main" class="inner cover">
+            <%= link_to image_tag("incline-logo.png", alt: "Incline logo") %>
+            <h1 class="cover-subtitle">Reach the Most out of Your Career</h1>
+            <p class="lead">
+              <a href="\home" class="btn btn-lg btn-secondary">Find out more</a>
+            </p>
+          </main>
+
+          <footer class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href=\home>INC.LINE</a>, by <a href="https://www.linkedin.com/in/ricky-tanudjaja/">Ricky Tanudjaja</a>.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
