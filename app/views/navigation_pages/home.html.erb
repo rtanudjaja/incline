@@ -11,58 +11,87 @@
 
     <div class="container">
       <header class="header clearfix">
-        <nav class="navbar navbar-toggleable-md navbar-light float-right">
-          <ul class="nav nav-pills ">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-1">
+          <%= link_to image_tag("incline-logo.png", :size => "134x60", :class => "home_logo_image") %>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <%= link_to image_tag("incline-logo2.png", :size => "134x60", :class => "home_logo_image") %>
-        
       </header>
 
       <main role="main">
 
-        <div class="jumbotron">
-          <h1 class="display-3">Jumbotron heading</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <div class="jumbotron home">
+          <h2 class="display-1">INC.LINE</h2>
+          <h4 class="display-4">"Reach the Most Out of Your Career"</h2>
+          <h5 class="lead">Gain the opportunity to learn how to create outstanding CV's that will heighten your competitiveness in the job market.</h5>
         </div>
 
         <div class="row marketing">
-          <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <div class="col-lg-12 event">
+            <div class="col-lg-6">
+              <h1 class="heading">CV Consultation</h1>
+              <%= link_to image_tag("resume.jpg", :size => "400x300", :class => "portrait") %>
+              <p class="lead">This event offers participants the opportunity to every individual to submit their CV and getting reviews from Navanti's Board of Directors. Thanks to their expertise, participants would gain sought out advice which could act as an invaluable boost to any student's personal development</p>
+            </div>
+            
+            <div class="col-lg-6">
+              <h1 class="heading">Career Seminar</h1>
+              <%= link_to image_tag("handshake.jpg", :size => "400x300", :class => "portrait") %>
+              <p class="lead">Participants would gain an extensive insight on where the Australia-Indonesia trade and investment relations is heading with respect to the bilateral co-operations and how the current generation of tertiary students will benefit from these new opportunities.</p>
+            </div>
+            
+            <div class="col-lg-12 video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/sJ2NIsmFpiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+          
+          </div>
+          
+          <div class="col-12">
+            <h1 class="title">Our Guest Speakers</h1>
+          </div>
+          
+          <div class="col-lg-4 profile">
+            <%= link_to image_tag("Menkeu_Bambang_Brodjonegoro.jpg", :size => "200x250", :class => "portrait") %>
+            <h4>Prof. Bambang Permadi Soemantri Brodjonegoro</h4>
+            <p class="description">The Minister of National Development Planning of Indonesia</p>
+          </div>
+          
+          <div class="col-lg-4 profile">
+            <%= link_to image_tag("Debnath-Guharoy.jpg", :size => "200x250", :class => "portrait") %>
+            <h4>Mr. Debnath Guharoy</h4>
+            <p class="description">The President of Australia Indonesia Business Council</p>
+          </div>
+          
+          <div class="col-lg-4 profile">
+            <%= link_to image_tag("Graeme-Bibby.jpg", :size => "200x250", :class => "portrait") %>
+            <h4>Mr. Graeme Bibby</h4>
+            <p class="description">The President at CFA Society of Melbourne</p>
           </div>
 
-          <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <div class="col-12 dateloc">
+            <h1 class="display-1">Date and Location</h1>
+            <p class="dateloc-text">Sunday, 8 May 2016 : 10.30 am - 4 pm</p>
+            <p class="dateloc-text">Melbourne Graduate School of Education,</p>
+            <p class="dateloc-text">Kwong Lee Dow Theatre, 234 Queensberry Street</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12609.6226191137!2d144.9608186!3d-37.8039663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6265bed10cdc875!2sKwong+Lee+Dow+Building!5e0!3m2!1sen!2sau!4v1512942382861" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
+
         </div>
 
       </main>
 
-      <footer class="container">
+      <footer class="container foot">
         <p>&copy; Melbourne University Indonesian Student Association 2016</p>
       </footer>
 
