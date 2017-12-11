@@ -6,3 +6,8 @@
     color: white;
     background: url("https://source.unsplash.com/HgcdpLIa5jo") no-repeat scroll 0px 35% / cover transparent;
 }
+
+.contact-ppia {
+    font-size: 3em;
+    text-align: center;
+}
